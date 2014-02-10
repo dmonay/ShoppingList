@@ -11,7 +11,7 @@ $(document).ready(function () {
         var currentItem = $("#item").val();
         if (!currentItem || !currentItem.trim()) {alert("Enter something!");}
         else {
-        $("#the_list").append("<li class='new_item'> <input type='checkbox' class='box'/>" + currentItem + "</li>");
+        $("#the_list").append("<li class='new_item'> <input type='checkbox' class='box'/> <span class='the_real_item'>" + currentItem + "</span></li>");
         }
     };
     
@@ -52,7 +52,7 @@ $(document).ready(function () {
     $("#new").click(clear);
     
     // make the item editable on click
-    $(document).on("click", "li", editThis);
+    $(document).on("click", ".the_real_item", editThis);
 });
 
 

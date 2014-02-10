@@ -41,6 +41,7 @@ ul {
     opacity: 0.4;        
 }
 
+.editable {border: 1px solid blue;}
 
 .orange {
     font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
